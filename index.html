@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Thrones Trivia</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game of Thrones Trivia!</h1>
+        <div id="show-number"></div>
+        <button id="start">Start</button>
+        <br>
+        <div class="questions">
+            <form>
+                <h3>Question 1</h3>
+                <p>What is the surname given to bastards born in Dorne?</p>
+                <div>
+                    <input type="radio" id="answer1" name="question1" value="false">
+                    <label for="answer1">Waters</label>
+                    <input type="radio" id="answer2" name="question1" value="true">
+                    <label for="answer2">Sand</label>
+                    <input type="radio" id="answer3" name="question1" value="false">
+                    <label for="answer3">Stone</label>
+                    <input type="radio" id="answer4" name="question1" value="false">
+                    <label for="answer4">Rivers</label>
+                </div>
+            </form>
+
+            <br>
+            <form>
+                <h3>Question 2</h3>
+                <p>'The Mountain' is the nickname for which character?</p>
+                <div>
+                    <input type="radio" id="answer1" name="question2" value="false">
+                    <label for="answer1">Sandor Clegane</label>
+                    <input type="radio" id="answer2" name="question2" value="false">
+                    <label for="answer2">Oberyn Martell</label>
+                    <input type="radio" id="answer3" name="question2" value="true">
+                    <label for="answer3">Gregor Clegane</label>
+                    <input type="radio" id="answer4" name="question2" value="false">
+                    <label for="answer4">Gerold Clegane</label>
+                </div>
+            </form>
+
+            <br>
+            <form>
+                <h3>Question 3</h3>
+                <p>Who is Lord Commander of the Kingsguard at the beginning of Game of Thrones?</p>
+                <div>
+                    <input type="radio" id="answer1" name="question3" value="true">
+                    <label for="answer1">Ser Barristan Selmy</label>
+                    <input type="radio" id="answer2" name="question3" value="false">
+                    <label for="answer2">Ser Jeor Mormont</label>
+                    <input type="radio" id="answer3" name="question3" value="false">
+                    <label for="answer3">Ser Jamie Lannister</label>
+                    <input type="radio" id="answer4" name="question3" value="false">
+                    <label for="answer4">Ser Loras Tyrell</label>
+                </div>
+            </form>
+
+            <br>
+            <h3>Question 4</h3>
+            <p>Who was Margaery Tyrell's first husband?</p>
+            <div>
+                <input type="radio" id="answer2" name="question4" value="false">
+                <label for=" answer1">Tommen Baratheon</label>
+                <input type="radio" id="answer2" name="question4" value="true">
+                <label for="answer2">Renley Baratheon</label>
+                <input type="radio" id="answer3" name="question4" value="false">
+                <label for="answer3">Stannis Baratheon</label>
+                <input type="radio" id="answer4" name="question4" value="false">
+                <label for="answer4">Joffery Baratheon</label>
+            </div>
+            </form>
+
+            <br>
+            <h3>Question 5</h3>
+            <p>Who is known as 'The-King-Beyond-the-Wall'?</p>
+            <div>
+                <input type="radio" id="answer2" name="question5" value="false">
+                <label for="answer1">Tormund Giantsbane</label>
+                <input type="radio" id="answer2" name="question5" value="false">
+                <label for="answer2">The Night King</label>
+                <input type="radio" id="answer3" name="question5" value="false">
+                <label for="answer3">Stannis Baratheon</label>
+                <input type="radio" id="answer4" name="question5" value="true">
+                <label for="answer4">Mance Rayder</label>
+            </div>
+            </form>
+
+            <br>
+            <h3>Question 6</h3>
+            <p>How many times has Sansa Stark been married?</p>
+            <div>
+                <input type="radio" id="answer2" name="question6" value="false">
+                <label for="answer1">None</label>
+                <input type="radio" id="answer2" name="question6" value="false">
+                <label for="answer2">Once</label>
+                <input type="radio" id="answer3" name="question6" value="true">
+                <label for="answer3">Twice</label>
+                <input type="radio" id="answer4" name="question6" value="false">
+                <label for="answer4">Three times</label>
+            </div>
+            </form>
+
+            <br>
+            <h3>Question 6</h3>
+            <p>Who is the ruler of the Iron Islands at the beginning of Game of Thrones?</p>
+            <div>
+                <input type="radio" id="answer2" name="question6" value="false">
+                <label for="answer1">Aeron Grayjoy</label>
+                <input type="radio" id="answer2" name="question6" value="false">
+                <label for="answer2">Euron Grayjoy</label>
+                <input type="radio" id="answer3" name="question6" value="true">
+                <label for="answer3">Balon Grayjoy</label>
+                <input type="radio" id="answer4" name="question6" value="false">
+                <label for="answer4">Yara Greyjoy</label>
+            </div>
+            </form>
+            <br>
+            </container>
+            <br>
+            <h3>Question 7</h3>
+            <p>Who was the Mad King's firstborn son?</p>
+            <div>
+                <input type="radio" id="answer2" name="question7" value="false">
+                <label for="answer1">Aemon Targaryen</label>
+                <input type="radio" id="answer2" name="question7" value="true">
+                <label for="answer2">Rhaegar Targaryen</label>
+                <input type="radio" id="answer3" name="question7" value="false">
+                <label for="answer3">Viserys Targaryen</label>
+                <input type="radio" id="answer4" name="question7" value="false">
+                <label for="answer4">Aegon Targaryen</label>
+            </div>
+            </form>
+            <br>
+            <h3>Question 8</h3>
+            <p>Who delivered the fatal blow to the King-in-the North, Robb Stark?</p>
+            <div>
+                <input type="radio" id="answer2" name="question8" value="false">
+                <label for="answer1">Allister Thorne</label>
+                <input type="radio" id="answer2" name="question8" value="false">
+                <label for="answer2">Walder Frey</label>
+                <input type="radio" id="answer3" name="question8" value="false">
+                <label for="answer3">Ramsey Bolton</label>
+                <input type="radio" id="answer4" name="question8" value="true">
+                <label for="answer4">Roose Bolton</label>
+            </div>
+            </form>
+            <br>
+            <h3>Question 9</h3>
+            <p>In which city does Arya Stark train to become a Faceless Man?</p>
+            <div>
+                <input type="radio" id="answer2" name="question9" value="true">
+                <label for="answer1">Braavos</label>
+                <input type="radio" id="answer2" name="question9" value="false">
+                <label for="answer2">Pentos</label>
+                <input type="radio" id="answer3" name="question9" value="false">
+                <label for="answer3">Meereen</label>
+                <input type="radio" id="answer4" name="question9" value="false">
+                <label for="answer4">Astapor</label>
+            </div>
+            </form>
+            <br>
+            <h3>Question 10</h3>
+            <p>Grey Worm and Missandei became allies of Daenerys Targaryen after she liberated the slaves of which city?
+            </p>
+            <div>
+                <input type="radio" id="answer2" name="question10" value="false">
+                <label for="answer1">Qarth</label>
+                <input type="radio" id="answer2" name="question10" value="false">
+                <label for="answer2">Yunkai</label>
+                <input type="radio" id="answer3" name="question10" value="true">
+                <label for="answer3">Astapor</label>
+                <input type="radio" id="answer4" name="question10" value="false">
+                <label for="answer4">Meereen</label>
+            </div>
+            </form>
+        
+            <br>
+            <div>
+                <button id="submit">Submit Answers</button>
+            </div>
+        </div>
+            <div class="results">
+                <h1 id="correct">Correct: 0</h1>
+                <h1 id="incorrect">Incorrect: 0</h1>
+            </div>
+        
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

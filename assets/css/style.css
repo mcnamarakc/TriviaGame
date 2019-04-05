@@ -1,0 +1,19 @@
+body {
+    background: url("../images/GoT-dragon.jpg") fixed 0 0;
+    font-family: 'Overlock', cursive;
+    max-height: 1114px;
+    
+}
+
+h1 {
+    
+}
+.container {
+    background-color: #161B33;
+    width: 33.3%;
+    text-align: center;
+    margin: 0 auto;
+    color: #A69CAC;
+    padding: 10px;
+    
+}
